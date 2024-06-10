@@ -1,602 +1,4 @@
 
-% Journals
-
-% First the Full Name is given, then the abbreviation used in the AMS Math
-% Reviews, with an indication if it could not be found there.
-% Note the 2nd overwrites the 1st, so swap them if you want the full name.
-
- %{AMS}
- @String{AMSTrans = "American Mathematical Society Translations" }
- @String{AMSTrans = "Amer. Math. Soc. Transl." }
- @String{BullAMS = "Bulletin of the American Mathematical Society" }
- @String{BullAMS = "Bull. Amer. Math. Soc." }
- @String{ProcAMS = "Proceedings of the American Mathematical Society" }
- @String{ProcAMS = "Proc. Amer. Math. Soc." }
- @String{TransAMS = "Transactions of the American Mathematical Society" }
- @String{TransAMS = "Trans. Amer. Math. Soc." }
-
- %ACM
- @String{CACM = "Communications of the {ACM}" }
- @String{CACM = "Commun. {ACM}" }
- @String{CompServ = "Comput. Surveys" }
- @String{JACM = "J. ACM" }
- @String{ACMMathSoft = "{ACM} Transactions on Mathematical Software" }
- @String{ACMMathSoft = "{ACM} Trans. Math. Software" }
- @String{SIGNUM = "{ACM} {SIGNUM} Newsletter" }
- @String{SIGNUM = "{ACM} {SIGNUM} Newslett." }
-
- @String{AmerSocio = "American Journal of Sociology" }
- @String{AmerStatAssoc = "Journal of the American Statistical Association" }
- @String{AmerStatAssoc = "J. Amer. Statist. Assoc." }
- @String{ApplMathComp = "Applied Mathematics and Computation" }
- @String{ApplMathComp = "Appl. Math. Comput." }
- @String{AmerMathMonthly = "American Mathematical Monthly" }
- @String{AmerMathMonthly = "Amer. Math. Monthly" }
- @String{BIT = "{BIT}" }
- @String{BritStatPsych = "British Journal of Mathematical and Statistical
-          Psychology" }
- @String{BritStatPsych = "Brit. J. Math. Statist. Psych." }
- @String{CanMathBull = "Canadian Mathematical Bulletin" }
- @String{CanMathBull = "Canad. Math. Bull." }
- @String{CompApplMath = "Journal of Computational and Applied Mathematics" }
- @String{CompApplMath = "J. Comput. Appl. Math." }
- @String{CompPhys = "Journal of Computational Physics" }
- @String{CompPhys = "J. Comput. Phys." }
- @String{CompStruct = "Computers and Structures" }
- @String{CompStruct = "Comput. \& Structures" }
- @String{CompJour = "The Computer Journal" }
- @String{CompJour = "Comput. J." }
- @String{CompSysSci = "Journal of Computer and System Sciences" }
- @String{CompSysSci = "J. Comput. System Sci." }
- @String{Computing = "Computing" }
- @String{ContempMath = "Contemporary Mathematics" }
- @String{ContempMath = "Contemp. Math." }
- @String{Crelle = "Crelle's Journal" }
- @String{GiornaleMath = "Giornale di Mathematiche" }
- @String{GiornaleMath = "Giorn. Mat." } % didn't find in AMS MR., ibid.
-
- %IEEE
- @String{Computer = "{IEEE} Computer" }
- @String{IEEETransComp = "{IEEE} Transactions on Computers" }
- @String{IEEETransComp = "{IEEE} Trans. Comput." }
- @String{IEEETransAC = "{IEEE} Transactions on Automatic Control" }
- @String{IEEETransAC = "{IEEE} Trans. Automat. Control" }
- @String{IEEESpec = "{IEEE} Spectrum" } % didn't find in AMS MR
- @String{ProcIEEE = "Proceedings of the {IEEE}" }
- @String{ProcIEEE = "Proc. {IEEE}" } % didn't find in AMS MR
- @String{IEEETransAeroElec = "{IEEE} Transactions on Aerospace and Electronic
-     Systems" }
- @String{IEEETransAeroElec = "{IEEE} Trans. Aerospace Electron. Systems" }
-
- @String{IMANumerAna = "{IMA} Journal of Numerical Analysis" }
- @String{IMANumerAna = "{IMA} J. Numer. Anal." }
- @String{InfProcLet = "Information Processing Letters" }
- @String{InfProcLet = "Inform. Process. Lett." }
- @String{InstMathApp = "Journal of the Institute of Mathematics and
-     its Applications" }
- @String{InstMathApp = "J. Inst. Math. Appl." }
- @String{IntControl = "International Journal of Control" }
- @String{IntControl = "Internat. J. Control" }
- @String{IntNumerEng = "International Journal for Numerical Methods in
-     Engineering" }
- @String{IntNumerEng = "Internat. J. Numer. Methods Engrg." }
- @String{IntSuper = "International Journal of Supercomputing Applications" }
- @String{IntSuper = "Internat. J. Supercomputing Applic." } % didn't find
-%% in AMS MR
- @String{Kibernetika = "Kibernetika" }
- @String{JResNatBurStand = "Journal of Research of the National Bureau
-     of Standards" }
- @String{JResNatBurStand = "J. Res. Nat. Bur. Standards" }
- @String{LinAlgApp = "Linear Algebra and its Applications" }
- @String{LinAlgApp = "Linear Algebra Appl." }
- @String{MathAnaAppl = "Journal of Mathematical Analysis and Applications" }
- @String{MathAnaAppl = "J. Math. Anal. Appl." }
- @String{MathAnnalen = "Mathematische Annalen" }
- @String{MathAnnalen = "Math. Ann." }
- @String{MathPhys = "Journal of Mathematical Physics" }
- @String{MathPhys = "J. Math. Phys." }
- @String{MathComp = "Mathematics of Computation" }
- @String{MathComp = "Math. Comp." }
- @String{MathScand = "Mathematica Scandinavica" }
- @String{MathScand = "Math. Scand." }
- @String{TablesAidsComp = "Mathematical Tables and Other Aids to Computation" }
- @String{TablesAidsComp = "Math. Tables Aids Comput." }
- @String{NumerMath = "Numerische Mathematik" }
- @String{NumerMath = "Numer. Math." }
- @String{PacificMath = "Pacific Journal of Mathematics" }
- @String{PacificMath = "Pacific J. Math." }
- @String{ParDistComp = "Journal of Parallel and Distributed Computing" }
- @String{ParDistComp = "J. Parallel and Distrib. Comput." } % didn't find
-%% in AMS MR
- @String{ParComputing = "Parallel Computing" }
- @String{ParComputing = "Parallel Comput." }
- @String{PhilMag = "Philosophical Magazine" }
- @String{PhilMag = "Philos. Mag." }
- @String{ProcNAS = "Proceedings of the National Academy of Sciences
-                    of the USA" }
- @String{ProcNAS = "Proc. Nat. Acad. Sci. U. S. A." }
- @String{Psychometrika = "Psychometrika" }
- @String{QuartMath = "Quarterly Journal of Mathematics, Oxford, Series (2)" }
- @String{QuartMath = "Quart. J. Math. Oxford Ser. (2)" }
- @String{QuartApplMath = "Quarterly of Applied Mathematics" }
- @String{QuartApplMath = "Quart. Appl. Math." }
- @String{RevueInstStat = "Review of the International Statisical Institute" }
- @String{RevueInstStat = "Rev. Inst. Internat. Statist." }
-
- %SIAM
- @String{JSIAM = "Journal of the Society for Industrial and Applied
-     Mathematics" }
- @String{JSIAM = "J. Soc. Indust. Appl. Math." }
- @String{JSIAMB = "Journal of the Society for Industrial and Applied
-     Mathematics, Series B, Numerical Analysis" }
- @String{JSIAMB = "J. Soc. Indust. Appl. Math. Ser. B Numer. Anal." }
- @String{SIAMAlgMeth = "{SIAM} Journal on Algebraic and Discrete Methods" }
- @String{SIAMAlgMeth = "{SIAM} J. Algebraic Discrete Methods" }
- @String{SIAMAppMath = "{SIAM} Journal on Applied Mathematics" }
- @String{SIAMAppMath = "{SIAM} J. Appl. Math." }
- @String{SIAMComp = "{SIAM} Journal on Computing" }
- @String{SIAMComp = "{SIAM} J. Comput." }
- @String{SIAMMatrix = "{SIAM} Journal on Matrix Analysis and Applications" }
- @String{SIAMMatrix = "{SIAM} J. Matrix Anal. Appl." }
- @String{SIAMNumAnal = "{SIAM} Journal on Numerical Analysis" }
- @String{SIAMNumAnal = "{SIAM} J. Numer. Anal." }
- @String{SIAMReview = "{SIAM} Review" }
- @String{SIAMReview = "{SIAM} Rev." }
- @String{SIAMSciStat = "{SIAM} Journal on Scientific and Statistical
-     Computing" }
- @String{SIAMSciStat = "{SIAM} J. Sci. Statist. Comput." }
-
- @String{SoftPracExp = "Software Practice and Experience" }
- @String{SoftPracExp = "Software Prac. Experience" } % didn't find in AMS MR
- @String{StatScience = "Statistical Science" }
- @String{StatScience = "Statist. Sci." }
- @String{Techno = "Technometrics" }
- @String{USSRCompMathPhys = "{USSR} Computational Mathematics and Mathematical
-     Physics" }
- @String{USSRCompMathPhys = "{U. S. S. R.} Comput. Math. and Math. Phys." }
- @String{VLSICompSys = "Journal of {VLSI} and Computer Systems" }
- @String{VLSICompSys = "J. {VLSI} Comput. Syst." }
- @String{ZAngewMathMech = "Zeitschrift fur Angewandte Mathematik und
-     Mechanik" }
- @String{ZAngewMathMech = "Z. Angew. Math. Mech." }
- @String{ZAngewMathPhys = "Zeitschrift fur Angewandte Mathematik und Physik" }
- @String{ZAngewMathPhys = "Z. Angew. Math. Phys." }
-
-% Publishers % ================================================= |
-
- @String{Academic = "Academic Press" }
- @String{ACMPress = "{ACM} Press" }
- @String{AdamHilger = "Adam Hilger" }
- @String{AddisonWesley = "Addison-Wesley" }
- @String{AllynBacon = "Allyn and Bacon" }
- @String{AMS = "American Mathematical Society" }
- @String{Birkhauser = "Birkha{\"u}ser" }
- @String{CambridgePress = "Cambridge University Press" }
- @String{Chelsea = "Chelsea" }
- @String{ClaredonPress = "Claredon Press" }
- @String{DoverPub = "Dover Publications" }
- @String{Eyolles = "Eyolles" }
- @String{HoltRinehartWinston = "Holt, Rinehart and Winston" }
- @String{Interscience = "Interscience" }
- @String{JohnsHopkinsPress = "The Johns Hopkins University Press" }
- @String{JohnWileySons = "John Wiley and Sons" }
- @String{Macmillan = "Macmillan" }
- @String{MathWorks = "The Math Works Inc." }
- @String{McGrawHill = "McGraw-Hill" }
- @String{NatBurStd = "National Bureau of Standards" }
- @String{NorthHolland = "North-Holland" }
- @String{OxfordPress = "Oxford University Press" }  %address Oxford or London?
- @String{PergamonPress = "Pergamon Press" }
- @String{PlenumPress = "Plenum Press" }
- @String{PrenticeHall = "Prentice-Hall" }
- @String{SIAMPub = "{SIAM} Publications" }
- @String{Springer = "Springer-Verlag" }
- @String{TexasPress = "University of Texas Press" }
- @String{VanNostrand = "Van Nostrand" }
- @String{WHFreeman = "W. H. Freeman and Co." }
-
-%Entries
-
-@article{Abril07,
-  author  = {Patricia S. Abril and Robert Plant},
-  title   = {The patent holder's dilemma: Buy, sell, or troll?},
-  journal = {Communications of the ACM},
-  volume  = {50},
-  number  = {1},
-  month   = jan,
-  year    = {2007},
-  pages   = {36--44},
-  doi     = {10.1145/1188913.1188915},
-  url     = {http://doi.acm.org/10.1145/1219092.1219093},
-  note    = {}
-}
-
-@article{Cohen07,
-  author    = {Sarah Cohen and Werner Nutt and Yehoshua Sagic},
-  title     = {Deciding equivalances among conjunctive aggregate queries},
-  journal   = JACM,
-  articleno = {5},
-  numpages  = {50},
-  volume    = {54},
-  number    = {2},
-  month     = apr,
-  year      = {2007},
-  doi       = {10.1145/1219092.1219093},
-  url       = {http://doi.acm.org/10.1145/1219092.1219093},
-  acmid     = {1219093},
-  note      = {}
-}
-
-
-@periodical{JCohen96,
-  key     = {Cohen},
-  editor  = {Jacques Cohen},
-  title   = {Special issue: Digital Libraries},
-  journal = CACM,
-  volume  = {39},
-  number  = {11},
-  month   = nov,
-  year    = {1996}
-}
-
-
-@book{Kosiur01,
-  author    = {David Kosiur},
-  title     = {Understanding Policy-Based Networking},
-  publisher = {Wiley},
-  year      = {2001},
-  address   = {New York, NY},
-  edition   = {2nd.},
-  editor    = {},
-  volume    = {},
-  number    = {},
-  series    = {},
-  month     = {},
-  note      = {}
-}
-
-
-@book{Harel79,
-  author    = {David Harel},
-  year      = {1979},
-  title     = {First-Order Dynamic Logic},
-  series    = {Lecture Notes in Computer Science},
-  volume    = {68},
-  address   = {New York, NY},
-  publisher = {Springer-Verlag},
-  doi       = {10.1007/3-540-09237-4},
-  url       = {http://dx.doi.org/10.1007/3-540-09237-4},
-  editor    = {},
-  number    = {},
-  month     = {},
-  note      = {}
-}
-
-
-@inbook{Editor00,
-  author    = {},
-  editor    = {Ian Editor},
-  title     = {The title of book one},
-  subtitle  = {The book subtitle},
-  series    = {The name of the series one},
-  year      = {2007},
-  volume    = {9},
-  address   = {Chicago},
-  edition   = {1st.},
-  publisher = {University of Chicago Press},
-  doi       = {10.1007/3-540-09237-4},
-  url       = {http://dx.doi.org/10.1007/3-540-09456-9},
-  chapter   = {},
-  pages     = {},
-  number    = {},
-  type      = {},
-  month     = {},
-  note      = {}
-}
-
-%
-@inbook{Editor00a,
-  author    = {},
-  editor    = {Ian Editor},
-  title     = {The title of book two},
-  subtitle  = {The book subtitle},
-  series    = {The name of the series two},
-  year      = {2008},
-  address   = {Chicago},
-  edition   = {2nd.},
-  publisher = {University of Chicago Press},
-  doi       = {10.1007/3-540-09237-4},
-  url       = {http://dx.doi.org/10.1007/3-540-09456-9},
-  volume    = {},
-  chapter   = {100},
-  pages     = {},
-  number    = {},
-  type      = {},
-  month     = {},
-  note      = {}
-}
-
-
-% incollection (has an editor, title, and possibly a booktitle)
-@incollection{Spector90,
-  author    = {Asad Z. Spector},
-  title     = {Achieving application requirements},
-  booktitle = {Distributed Systems},
-  publisher = {ACM Press},
-  address   = {New York, NY},
-  year      = {1990},
-  edition   = {2nd.},
-  chapter   = {},
-  editor    = {Sape Mullender},
-  pages     = {19--33},
-  doi       = {10.1145/90417.90738},
-  url       = {http://doi.acm.org/10.1145/90417.90738},
-  volume    = {},
-  number    = {},
-  series    = {},
-  type      = {},
-  month     = {},
-  note      = {}
-}
-
-
-% incollection (has an editor, title, and possibly a booktitle)
-@incollection{Douglass98,
-  author    = {Bruce P. Douglass and David Harel and Mark B. Trakhtenbrot},
-  title     = {Statecarts in use: structured analysis and object-orientation},
-  series    = {Lecture Notes in Computer Science},
-  booktitle = {Lectures on Embedded Systems},
-  publisher = {Springer-Verlag},
-  address   = {London},
-  volume    = {1494},
-  year      = {1998},
-  chapter   = {},
-  editor    = {Grzegorz Rozenberg and Frits W. Vaandrager},
-  pages     = {368--394},
-  doi       = {10.1007/3-540-65193-4_29},
-  url       = {http://dx.doi.org/10.1007/3-540-65193-4_29},
-  edition   = {},
-  number    = {},
-  type      = {},
-  month     = {},
-  note      = {}
-}
-
-
-@book{Knuth97,
-  author    = {Donald E. Knuth},
-  title     = {The Art of Computer Programming, Vol. 1: Fundamental Algorithms (3rd. ed.)},
-  publisher = {Addison Wesley Longman Publishing Co., Inc.},
-  year      = {1997},
-  address   = {},
-  edition   = {},
-  editor    = {},
-  volume    = {},
-  number    = {},
-  series    = {},
-  month     = {},
-  note      = {}
-}
-
-
-@book{Knuth98,
-  author    = {Donald E. Knuth},
-  year      = {1998},
-  title     = {The Art of Computer Programming},
-  series    = {Fundamental Algorithms},
-  volume    = {1},
-  edition   = {3rd},
-  address   = {},
-  publisher = {Addison Wesley Longman Publishing Co., Inc.},
-  doi       = {},
-  url       = {},
-  editor    = {},
-  number    = {},
-  month     = {},
-  note      = {(book)}
-}
-
-%Inbook{Knuth97,
-%  author =       "Donald E. Knuth",
-%  title =        "The Art of Computer Programming",
-%  booktitle =    "the booktitle",
-%  edition =      "3",
-%  volume =       "1",
-%  year =         "1997",
-%  publisher =    "Addison Wesley Longman Publishing Co., Inc.",
-%  editor =       "",
-%  number =       "",
-%  series =       "Fundamental Algorithms",
-%  type =         "",
-%  chapter =      "",
-%  pages =        "",
-%  address =      "",
-%  month =        "",
-%  note =         "(inbook)",
-%}
-
-%INBOOK{DK:73-inbook-full,
-%   author = "Donald E. Knuth",
-%   title = "Fundamental Algorithms (inbook w series)",
-%   volume = 1,
-%   series = "The Art of Computer Programming",
-%   publisher = "Addison-Wesley",
-%   address = "Reading, Massachusetts",
-%   edition = "Second",
-%   month = "10~" # jan,
-%   year = "1973",
-%   type = "Section",
-%   chapter = "1.2",
-%   pages = "10--119",
-%   note = "Full INBOOK entry (w series)",
-%}
-
-%INcollection{DK:74-incoll,
-%   author = "Donald E. Knuth",
-%   title = "Fundamental Algorithms (incoll)",
-%   volume = 1,
-%   booktitle = "The Art of Computer Programming",
-%   publisher = "Addison-Wesley",
-%   address = "Reading, Massachusetts",
-%   month = "10~" # jan,
-%   year = "1974",
-%   pages = "10--119",
-%   editor = "Bernard Rous",
-%   note = "This is a full incoll entry with an editor",
-%}
-
-%INcollection{DK:75-incollws,
-%   author = "Donald E. Knuth",
-%   title = "Fundamental Algorithms (incoll w series)",
-%   volume = 1,
-%   booktitle = "The Art of Computer Programming",
-%   series = "The Art of Computer Programming",
-%   publisher = "Addison-Wesley",
-%   address = "Reading, Massachusetts",
-%   month = "10~" # jan,
-%   year = "1975",
-%   pages = "10--119",
-%   editor = "Bernard Rous",
-%   note = "This is a full incoll entry with an editor and series",
-%}
-
-
-@incollection{GM05,
-  author    = {Dan Geiger and Christopher Meek},
-  title     = {Structured Variational Inference Procedures and their Realizations (as incol)},
-  year      = 2005,
-  booktitle = {Proceedings of Tenth International Workshop on Artificial Intelligence and Statistics, {\rm The Barbados}},
-  publisher = {The Society for Artificial Intelligence and Statistics},
-  month     = jan,
-  editors   = {Z. Ghahramani and R. Cowell}
-}
-
-@inproceedings{Smith10,
-  author       = {Stan W. Smith},
-  title        = {An experiment in bibliographic mark-up: Parsing metadata for XML export},
-  booktitle    = {Proceedings of the 3rd. annual workshop on Librarians and Computers},
-  series       = {LAC '10},
-  editor       = {Reginald N. Smythe and Alexander Noble},
-  volume       = {3},
-  year         = {2010},
-  publisher    = {Paparazzi Press},
-  address      = {Milan Italy},
-  pages        = {422--431},
-  doi          = {99.9999/woot07-S422},
-  url          = {http://dx.doi.org/99.0000/woot07-S422},
-  number       = {},
-  month        = {},
-  organization = {},
-  note         = {}
-}
-
-@inproceedings{VanGundy07,
-  author       = {Matthew Van Gundy and Davide Balzarotti and Giovanni Vigna},
-  year         = {2007},
-  title        = {Catch me, if you can: Evading network signatures with web-based polymorphic worms},
-  booktitle    = {Proceedings of the first USENIX workshop on Offensive Technologies},
-  series       = {WOOT '07},
-  publisher    = {USENIX Association},
-  address      = {Berkley, CA},
-  articleno    = {7},
-  numpages     = {9},
-  editor       = {},
-  volume       = {},
-  number       = {},
-  pages        = {},
-  month        = {},
-  organization = {},
-  note         = {}
-}
-
-@inproceedings{VanGundy08,
-  author       = {Matthew Van Gundy and Davide Balzarotti and Giovanni Vigna},
-  year         = {2008},
-  title        = {Catch me, if you can: Evading network signatures with web-based polymorphic worms},
-  booktitle    = {Proceedings of the first USENIX workshop on Offensive Technologies},
-  series       = {WOOT '08},
-  publisher    = {USENIX Association},
-  address      = {Berkley, CA},
-  articleno    = {7},
-  numpages     = {2},
-  editor       = {},
-  volume       = {},
-  number       = {},
-  pages        = {99-100},
-  month        = {},
-  organization = {},
-  note         = {}
-}
-
-@inproceedings{VanGundy09,
-  author       = {Matthew Van Gundy and Davide Balzarotti and Giovanni Vigna},
-  year         = {2009},
-  title        = {Catch me, if you can: Evading network signatures with web-based polymorphic worms},
-  booktitle    = {Proceedings of the first USENIX workshop on Offensive Technologies},
-  series       = {WOOT '09},
-  publisher    = {USENIX Association},
-  address      = {Berkley, CA},
-  articleno    = {},
-  numpages     = {},
-  editor       = {},
-  volume       = {},
-  number       = {},
-  pages        = {90--100},
-  month        = {},
-  organization = {},
-  note         = {}
-}
-
-@inproceedings{Andler79,
-  author       = {Sten Andler},
-  title        = {Predicate Path expressions},
-  booktitle    = {Proceedings of the 6th. ACM SIGACT-SIGPLAN symposium on Principles of Programming Languages},
-  series       = {POPL '79},
-  year         = {1979},
-  publisher    = {ACM Press},
-  address      = {New York, NY},
-  pages        = {226--236},
-  doi          = {10.1145/567752.567774},
-  url          = {http://doi.acm.org/10.1145/567752.567774},
-  editor       = {},
-  volume       = {},
-  number       = {},
-  month        = {},
-  organization = {},
-  note         = {}
-}
-
-@techreport{Harel78,
-  author      = {David Harel},
-  year        = {1978},
-  title       = {LOGICS of Programs: AXIOMATICS and DESCRIPTIVE POWER},
-  institution = {Massachusetts Institute of Technology},
-  type        = {MIT Research Lab Technical Report},
-  number      = {TR-200},
-  address     = {Cambridge, MA},
-  month       = {},
-  note        = {}
-}
-
-@mastersthesis{anisi03,
-  author     = {David A. Anisi},
-  title      = {Optimal Motion Control of a Ground Vehicle},
-  school     = {Royal Institute of Technology (KTH), Stockholm, Sweden},
-  intitution = {FOI-R-0961-SE, Swedish Defence Research Agency (FOI)},
-  year       = {2003}
-}
-
-
-@phdthesis{Clarkson85,
-  author  = {Kenneth L. Clarkson},
-  year    = {1985},
-  title   = {Algorithms for Closest-Point Problems (Computational Geometry)},
-  school  = {Stanford University},
-  address = {Palo Alto, CA},
-  note    = {UMI Order Number: AAT 8506171},
-  type    = {},
-  month   = {}
-}
 
 @online{golang,
   author       = {Google},
@@ -2546,7 +1948,7 @@ series = {EuroSys '18}
   series    = {CCS '18}
 }
 
-@article{resilientdb,
+@article{ResilientDB,
   author     = {Gupta, Suyash and Rahnama, Sajjad and Hellings, Jelle and Sadoghi, Mohammad},
   title      = {ResilientDB: Global Scale Resilient Blockchain Fabric},
   year       = {2020},
@@ -4387,3 +3789,551 @@ articleno = {139},
 numpages = {33},
 keywords = {Blockchain scalability, error correction codes, distributed systems}
 }
+
+
+@inproceedings{Fireplug,
+  author    = {Neiheiser, Ray and Presser, Daniel and Rech, Luciana and Bravo, Manuel and Rodrigues, Luís and Correia, Miguel},
+  booktitle = {2018 International Conference on Information Networking (ICOIN)},
+  title     = {Fireplug: Flexible and robust N-version geo-replication of graph databases},
+  year      = {2018},
+  volume    = {},
+  number    = {},
+  pages     = {110-115},
+  keywords  = {Databases;Computer crashes;Protocols;Software;Programming;Fault tolerance;Fault tolerant systems;Graph databases;Geo-replication;N-version programming;Byzantine faults},
+  doi       = {10.1109/ICOIN.2018.8343095}
+}
+
+@article{Qanaat,
+  author     = {Amiri, Mohammad Javad and Loo, Boon Thau and Agrawal, Divyakant and Abbadi, Amr El},
+  title      = {Qanaat: a scalable multi-enterprise permissioned blockchain system with confidentiality guarantees},
+  year       = {2022},
+  issue_date = {July 2022},
+  publisher  = {VLDB Endowment},
+  volume     = {15},
+  number     = {11},
+  issn       = {2150-8097},
+  url        = {https://doi.org/10.14778/3551793.3551835},
+  doi        = {10.14778/3551793.3551835},
+  abstract   = {Today's large-scale data management systems need to address distributed applications' confidentiality and scalability requirements among a set of collaborative enterprises. This paper presents Qanaat, a scalable multi-enterprise permissioned blockchain system that guarantees the confidentiality of enterprises in collaboration workflows. Qanaat presents data collections that enable any subset of enterprises involved in a collaboration workflow to keep their collaboration private from other enterprises. A transaction ordering scheme is also presented to enforce only the necessary and sufficient constraints on transaction order to guarantee data consistency. Furthermore, Qanaat supports data consistency across collaboration workflows where an enterprise can participate in different collaboration workflows with different sets of enterprises. Finally, Qanaat presents a suite of consensus protocols to support intra-shard and cross-shard transactions within or across enterprises.},
+  journal    = {Proc. VLDB Endow.},
+  month      = {jul},
+  pages      = {2839–2852},
+  numpages   = {14}
+}
+
+
+
+@article{TopBFT,
+  author   = {Chen, Xiao and Ma, Tiejun and Er-Rahmadi, Btissam and Hillston, Jane and Yuan, Guanxu},
+  journal  = {IEEE Transactions on Dependable and Secure Computing},
+  title    = {Parallel Byzantine Consensus Based on Hierarchical Architecture and Trusted Hardware},
+  year     = {2024},
+  volume   = {},
+  number   = {},
+  pages    = {1-15},
+  keywords = {Scalability;Safety;Complexity theory;Parallel processing;Consensus protocol;Computer architecture;Sharding;Parallel BFT;hierarchical architecture;trusted execution environment;secret sharing scheme},
+  doi      = {10.1109/TDSC.2024.3375925}
+}
+
+@inproceedings{EBFT,
+  author    = {Li, Wenzheng and He, Mingsheng},
+  booktitle = {2021 IEEE 12th International Conference on Software Engineering and Service Science (ICSESS)},
+  title     = {EBFT: A Hierarchical and Group-Based Byzantine Fault Tolerant Consensus Algorithm},
+  year      = {2021},
+  volume    = {},
+  number    = {},
+  pages     = {32-37},
+  keywords  = {Fault tolerance;Network topology;Conferences;Fault tolerant systems;Consensus algorithm;Blockchains;Complexity theory;PBFT;consortium blockchain;consensus algorithm;high performance},
+  doi       = {10.1109/ICSESS52187.2021.9522233}
+}
+
+@article{LH-Raft,
+  author   = {Guo, Hao and Li, Wanxin and Nejad, Mark},
+  journal  = {IEEE Transactions on Network and Service Management},
+  title    = {A Hierarchical and Location-Aware Consensus Protocol for IoT-Blockchain Applications},
+  year     = {2022},
+  volume   = {19},
+  number   = {3},
+  pages    = {2972-2986},
+  keywords = {Internet of Things;Consensus protocol;Protocols;Scalability;Throughput;Fault tolerant systems;Fault tolerance;Blockchain;Internet of Things;consensus protocol;threshold signature scheme;hierarchical architecture},
+  doi      = {10.1109/TNSM.2022.3176607}
+}
+@inproceedings{Apex,
+  author    = {Makkes, Marc X. and Diebels, Robert},
+  booktitle = {2019 Sixth International Conference on Internet of Things: Systems, Management and Security (IOTSMS)},
+  title     = {Apex: a High-Performance Hierarchical Distributed Ledger},
+  year      = {2019},
+  volume    = {},
+  number    = {},
+  pages     = {466-473},
+  keywords  = {Blockchain;Distributed ledger;Fabrics;Throughput;Intellectual property;Cryptography},
+  doi       = {10.1109/IOTSMS48152.2019.8939189}
+}
+
+@article{LayerChain,
+  author   = {Yu, Yao and Liu, Shumei and Yeoh, Phee Lep and Vucetic, Branka and Li, Yonghui},
+  journal  = {IEEE Transactions on Industrial Informatics},
+  title    = {LayerChain: A Hierarchical Edge-Cloud Blockchain for Large-Scale Low-Delay Industrial Internet of Things Applications},
+  year     = {2021},
+  volume   = {17},
+  number   = {7},
+  pages    = {5077-5086},
+  keywords = {Edge computing;Cloud computing;Delays;Peer-to-peer computing;Informatics;Internet of Things;Block propagation;blockchain;cloud computing;industrial Internet of Things (IIoT);layered storage;pervasive edge computing},
+  doi      = {10.1109/TII.2020.3016025}
+}
+
+@article{SZHBFT,
+  author   = {Kwak, Ji-Young and Yim, Jongchoul and Ko, Nam-Seok and Kim, Sun-Me},
+  journal  = {IEEE Transactions on Engineering Management},
+  title    = {The Design of Hierarchical Consensus Mechanism Based on Service-Zone Sharding},
+  year     = {2020},
+  volume   = {67},
+  number   = {4},
+  pages    = {1387-1403},
+  keywords = {Blockchain;Internet of Things;Scalability;Peer-to-peer computing;Ecosystems;Smart contracts;Byzantine agreement;distributed multiledgers;hierarchical consensus},
+  doi      = {10.1109/TEM.2020.2993413}
+}
+
+
+
+@inproceedings{HierarchicalConsensus,
+  author    = {De la Rocha, Alfonso and Kokoris-Kogias, Lefteris and Soares, Jorge M. and Vukolić, Marko},
+  booktitle = {2022 IEEE 42nd International Conference on Distributed Computing Systems Workshops (ICDCSW)},
+  title     = {Hierarchical Consensus: A Horizontal Scaling Framework for Blockchains},
+  year      = {2022},
+  volume    = {},
+  number    = {},
+  pages     = {45-52},
+  keywords  = {Checkpointing;Sharding;Conferences;Systems architecture;Prototypes;Consensus algorithm;Throughput;blockchain;consensus;distributed systems;P2P;scalability;sharding},
+  doi       = {10.1109/ICDCSW56584.2022.00018}
+}
+
+@inproceedings{PoQDB,
+  author    = {Al-Joboury, Istabraq M. and Al-Hemiary, Emad H.},
+  booktitle = {2021 International Symposium on Networks, Computers and Communications (ISNCC)},
+  title     = {A Permissioned Consensus Algorithm Based DAGs-to-Blockchain in Hierarchical Architecture for Decentralized Internet of Things},
+  year      = {2021},
+  volume    = {},
+  number    = {},
+  pages     = {1-6},
+  keywords  = {Cloud computing;Scalability;Consensus algorithm;Computer architecture;Throughput;Real-time systems;Blockchains;Consensus Algorithms;Blockchain;DAG;IoT;Distributed ledgers;Healthcare.},
+  doi       = {10.1109/ISNCC52172.2021.9615865}
+}
+
+
+@article{vCubeChain,
+  title    = {vCubeChain: A scalable permissioned blockchain},
+  journal  = {Ad Hoc Networks},
+  volume   = {158},
+  pages    = {103461},
+  year     = {2024},
+  issn     = {1570-8705},
+  doi      = {https://doi.org/10.1016/j.adhoc.2024.103461},
+  url      = {https://www.sciencedirect.com/science/article/pii/S1570870524000726},
+  author   = {Allan Edgard Silva Freitas and Luiz Antonio Rodrigues and Elias Procópio Duarte},
+  keywords = {Distributed computing, Consensus, Blocksim, vCube},
+  abstract = {This work presents vCubeChain, a scalable permissioned blockchain based on the vCube virtual topology. vCube is a virtual hierarchical topology that presents several logarithmic properties. vCubeChain employs a leader election algorithm that relies on the failure detection information that vCube provides. The leader employs a vCube-based autonomic reliable broadcast algorithm to disseminate blocks, each consisting of multiple transactions. In case multiple leaders end up concurrently elected due to false suspicions, vCubeChain is proven to recover to a consistent state upon the discovery of contradictory blocks. vCubeChain is described, specified, and correctness and liveness draft proofs are presented. The blockchain was implemented on the Blocksim simulator, and a set of experiments are presented, including comparisons with Bitcoin, Ethereum and Hyperledge Fabric. Results demonstrate the scalability of the solution.}
+}
+
+@article{STBFT,
+  author   = {Jiang, Wangxi and Wu, Xiaoxiong and Song, Mingyang and Qin, Jiwei and Jia, Zhenhong},
+  journal  = {IEEE Access},
+  title    = {A Scalable Byzantine Fault Tolerance Algorithm Based on a Tree Topology Network},
+  year     = {2023},
+  volume   = {11},
+  number   = {},
+  pages    = {33509-33519},
+  keywords = {Heuristic algorithms;Fault tolerant systems;Communications systems;Security;Scalability;Peer-to-peer computing;Consensus algorithm;Topology;Tree topology network;PBFT;scalability;communication complexity;high fault tolerance},
+  doi      = {10.1109/ACCESS.2023.3264011}
+}
+
+@article{double-layer-PBFT,
+  author   = {Li, Wenyu and Feng, Chenglin and Zhang, Lei and Xu, Hao and Cao, Bin and Imran, Muhammad Ali},
+  journal  = {IEEE Transactions on Parallel and Distributed Systems},
+  title    = {A Scalable Multi-Layer PBFT Consensus for Blockchain},
+  year     = {2021},
+  volume   = {32},
+  number   = {5},
+  pages    = {1146-1160},
+  keywords = {Blockchain;Complexity theory;Scalability;Security;Peer-to-peer computing;Throughput;Internet of Things;PBFT;communication complexity;node scalability;consensus mechanism;blockchain},
+  doi      = {10.1109/TPDS.2020.3042392}
+}
+
+@inproceedings{PAS,
+  author    = {Xu, Zihuan
+               and Han, Siyuan
+               and Chen, Lei},
+  editor    = {Jensen, Christian S.
+               and Lim, Ee-Peng
+               and Yang, De-Nian
+               and Lee, Wang-Chien
+               and Tseng, Vincent S.
+               and Kalogeraki, Vana
+               and Huang, Jen-Wei
+               and Shen, Chih-Ya},
+  title     = {PAS: Enable Partial Consensus in the Blockchain},
+  booktitle = {Database Systems for Advanced Applications},
+  year      = {2021},
+  publisher = {Springer International Publishing},
+  address   = {Cham},
+  pages     = {375--392},
+  abstract  = {Permissioned Blockchain enables distributed collaboration among organizations that may not trust each other. However, existing systems cannot efficiently support the ordering and execution of transactions in different workflows parallelly, which seriously affects system scalability and performances in terms of throughput and latency.},
+  isbn      = {978-3-030-73200-4}
+}
+
+
+@article{Wang2023SoKBF,
+  title={SoK: Blockchain for Industrial Internet of Things},
+  author={Gang Wang and Mark Nixon},
+  journal={2023 Fifth International Conference on Blockchain Computing and Applications (BCCA)},
+  year={2023},
+  pages={250-265},
+  url={https://api.semanticscholar.org/CorpusID:266197922}
+}
+
+@ARTICLE{8962150,
+  author={Zhou, Qiheng and Huang, Huawei and Zheng, Zibin and Bian, Jing},
+  journal={IEEE Access}, 
+  title={Solutions to Scalability of Blockchain: A Survey}, 
+  year={2020},
+  volume={8},
+  number={},
+  pages={16440-16455},
+  keywords={Blockchain;Scalability;Bitcoin;Throughput;Measurement;Blockchain;scalability},
+  doi={10.1109/ACCESS.2020.2967218}}
+
+  @ARTICLE{9133427,
+  author={Hafid, Abdelatif and Hafid, Abdelhakim Senhaji and Samih, Mustapha},
+  journal={IEEE Access}, 
+  title={Scaling Blockchains: A Comprehensive Survey}, 
+  year={2020},
+  volume={8},
+  number={},
+  pages={125244-125262},
+  keywords={Blockchain;Scalability;Protocols;Bitcoin;Peer-to-peer computing;Taxonomy;Blockchain;scalability;sharding;first layer solutions;second layer solutions},
+  doi={10.1109/ACCESS.2020.3007251}}
+
+
+@misc{cryptoeprint:2021/1589,
+      author = {Patrick McCorry and Chris Buckland and Bennet Yee and Dawn Song},
+      title = {{SoK}: Validating Bridges as a Scaling Solution for Blockchains},
+      howpublished = {Cryptology ePrint Archive, Paper 2021/1589},
+      year = {2021},
+      note = {\url{https://eprint.iacr.org/2021/1589}},
+      url = {https://eprint.iacr.org/2021/1589}
+}
+
+@INPROCEEDINGS{10174976,
+  author={Berger, Christian and Schwarz-Rüsch, Signe and Vogel, Arne and Bleeke, Kai and Jehl, Leander and Reiser, Hans P. and Kapitza, Rüdiger},
+  booktitle={2023 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)}, 
+  title={SoK: Scalability Techniques for BFT Consensus}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-18},
+  keywords={Surveys;Fault tolerance;Distributed ledger;Scalability;Fault tolerant systems;Energy efficiency;Consensus protocol;Byzantine Fault Tolerance;Consensus;Scalability;Blockchain},
+  doi={10.1109/ICBC56567.2023.10174976}}
+
+@inproceedings{10.1145/3318041.3355457,
+author = {Wang, Gang and Shi, Zhijie Jerry and Nixon, Mark and Han, Song},
+title = {SoK: Sharding on Blockchain},
+year = {2019},
+isbn = {9781450367325},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3318041.3355457},
+doi = {10.1145/3318041.3355457},
+abstract = {Blockchain is a distributed and decentralized ledger for recording transactions. It is maintained and shared among the participating nodes by utilizing cryptographic primitives. A consensus protocol ensures that all nodes agree on a unique order in which records are appended. However, current blockchain solutions are facing scalability issues. Many methods, such as Off-chain and Directed Acyclic Graph (DAG) solutions, have been proposed to address the issue. However, they have inherent drawbacks, e.g., forming parasite chains. Performance, such as throughput and latency, is also important to a blockchain system. Sharding has emerged as a good candidate that can overcome both the scalability and performance problems in blockchain. To date, there is no systematic work that analyzes the sharding protocols. To bridge this gap, this paper provides a systematic and comprehensive review on blockchain sharding techniques. We first present a general design flow of sharding protocols and then discuss key design challenges. For each challenge, we analyze and compare the techniques in state-of-the-art solutions. Finally, we discuss several potential research directions in blockchain sharding.},
+booktitle = {Proceedings of the 1st ACM Conference on Advances in Financial Technologies},
+pages = {41–61},
+numpages = {21},
+keywords = {SoK, Sharding, Consensus Protocol, Blockchain},
+location = {Zurich, Switzerland},
+series = {AFT '19}
+}
+
+@article{10.1145/3579845,
+author = {Xu, Jie and Wang, Cong and Jia, Xiaohua},
+title = {A Survey of Blockchain Consensus Protocols},
+year = {2023},
+issue_date = {December 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {55},
+number = {13s},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3579845},
+doi = {10.1145/3579845},
+abstract = {Blockchain consensus protocols have been a focus of attention since the advent of Bitcoin. Although classic distributed consensus algorithms made significant contributions to the development of blockchain consensus protocols, there are still many issues to be resolved due to the complexity and diversity of the blockchain. In this survey, we summarize the state-of-the-art blockchain consensus protocols. We first introduce the theoretical basis, models, and challenges of blockchain consensus protocols. Then, we present the existing blockchain protocols in the categories of proof-based protocols, committee-based protocols, and other miscellaneous protocols. Finally, we analyze their performance and discuss future research directions by comparing existing protocols.},
+journal = {ACM Comput. Surv.},
+month = {jul},
+articleno = {278},
+numpages = {35},
+keywords = {Blockchain consensus, cryptocurrency, security, scalability, decentralization}
+}
+
+@article{10.1145/3576899,
+author = {Wang, Qin and Yu, Jiangshan and Chen, Shiping and Xiang, Yang},
+title = {SoK: DAG-based Blockchain Systems},
+year = {2023},
+issue_date = {December 2023},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {55},
+number = {12},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3576899},
+doi = {10.1145/3576899},
+abstract = {Limitations on high latency and low scalability of classical blockchain systems retard their adoptions and applications. Reconstructed blockchain systems have been proposed to avoid the consumption of competitive transactions caused by linear sequenced blocks. These systems, instead, structure transactions/blocks in the form of Directed Acyclic Graph (DAG) and consequently rebuild upper layer components. The promise of DAG-based blockchain systems is to enable fast confirmation (complete transactions within million seconds) and high scalability (attach transactions in parallel) without significantly compromising security. However, this field still lacks systematic work that summarises DAG techniques. To bridge the gap, this Systematization of Knowledge (SoK) provides a comprehensive analysis of ever-existing and ongoing DAG-based blockchain systems. We abstract a general model to capture the main features and identify six types of design patterns. Then, we evaluate these systems from the perspectives of structure, consensus, property, security, and performance. We further discuss the trade-off between different factors, open challenges, and the potentiality of DAG-based solutions, indicating their promising directions for future research.},
+journal = {ACM Comput. Surv.},
+month = {mar},
+articleno = {261},
+numpages = {38},
+keywords = {DAG-based blockchain, SoK, performance}
+}
+
+@inproceedings{10.1145/3558535.3559780,
+author = {Werner, Sam and Perez, Daniel and Gudgeon, Lewis and Klages-Mundt, Ariah and Harz, Dominik and Knottenbelt, William},
+title = {SoK: Decentralized Finance (DeFi)},
+year = {2023},
+isbn = {9781450398619},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3558535.3559780},
+doi = {10.1145/3558535.3559780},
+abstract = {Decentralized Finance (DeFi), a blockchain powered peer-to-peer financial system, is mushrooming. Two years ago the total value locked in DeFi systems was approximately 700m USD, now, as of April 2022, it stands at around 150bn USD. The frenetic evolution of the ecosystem has created challenges in understanding the basic principles of these systems and their security risks. In this Systematization of Knowledge (SoK) we delineate the DeFi ecosystem along the following axes: its primitives, its operational protocol types and its security. We provide a distinction between technical security, which has a healthy literature, and economic security, which is largely unexplored, connecting the latter with new models and thereby synthesizing insights from computer science, economics and finance. Finally, we outline the open research challenges in the ecosystem across these security types.},
+booktitle = {Proceedings of the 4th ACM Conference on Advances in Financial Technologies},
+pages = {30–46},
+numpages = {17},
+keywords = {blockchain, ethereum, DeFi, decentralized finance},
+location = {Cambridge, MA, USA},
+series = {AFT '22}
+}
+
+
+@InProceedings{SokLayer2,
+author="Gudgeon, Lewis
+and Moreno-Sanchez, Pedro
+and Roos, Stefanie
+and McCorry, Patrick
+and Gervais, Arthur",
+editor="Bonneau, Joseph
+and Heninger, Nadia",
+title="SoK: Layer-Two Blockchain Protocols",
+booktitle="Financial Cryptography and Data Security",
+year="2020",
+publisher="Springer International Publishing",
+address="Cham",
+pages="201--226",
+abstract="Blockchains have the potential to revolutionize markets and services. However, they currently exhibit high latencies and fail to handle transaction loads comparable to those managed by traditional financial systems. Layer-two protocols, built on top of (layer-one) blockchains, avoid disseminating every transaction to the whole network by exchanging authenticated transactions off-chain. Instead, they utilize the expensive and low-rate blockchain only as a recourse for disputes. The promise of layer-two protocols is to complete off-chain transactions in sub-seconds rather than minutes or hours while retaining asset security, reducing fees and allowing blockchains to scale.",
+isbn="978-3-030-51280-4"
+}
+
+@article{SokLayer2_2,
+title = {A survey of Layer-two blockchain protocols},
+journal = {Journal of Network and Computer Applications},
+volume = {209},
+pages = {103539},
+year = {2023},
+issn = {1084-8045},
+doi = {https://doi.org/10.1016/j.jnca.2022.103539},
+url = {https://www.sciencedirect.com/science/article/pii/S1084804522001801},
+author = {Ankit Gangwal and Haripriya Ravali Gangavalli and Apoorva Thirupathi},
+keywords = {Blockchain, , Off-chain, Scalability},
+abstract = {After the success of the Bitcoin blockchain, came several cryptocurrencies and blockchain solutions in the last decade. Nonetheless, Blockchain-based systems still suffer from low transaction rates and high transaction processing latencies, which hinder blockchains’ scalability. An entire class of solutions, called Layer-1 scalability solutions, have attempted to incrementally improve such limitations by adding/modifying fundamental blockchain attributes. Recently, a completely different class of works, called Layer-2 protocols, have emerged to tackle the blockchain scalability issues using unconventional approaches. Layer-2 protocols improve transaction processing rates, periods, and fees by minimizing the use of underlying slow and costly blockchains. In fact, the main chain acts just as an instrument for trust establishment and dispute resolution among Layer-2 participants, where only a few transactions are dispatched to the main chain. Thus, Layer-2 blockchain protocols have the potential to transform the domain. However, rapid and discrete developments have resulted in diverse branches of Layer-2 protocols. In this work, we systematically create a broad taxonomy of such protocols and implementations. We discuss each Layer-2 protocol class in detail and also elucidate their respective approaches, salient features, requirements, etc. Moreover, we outline the issues related to these protocols along with a comparative discussion. Our thorough study will help further systematize the knowledge dispersed in the domain and help the readers to better understand the field of Layer-2 protocols.}
+}
+
+@ARTICLE{10468547,
+  author={Rebello, Gabriel Antonio F. and Camilo, Gustavo F. and de Souza, Lucas Airam C. and Potop-Butucaru, Maria and de Amorim, Marcelo Dias and Campista, Miguel Elias M. and Costa, Luís Henrique M. K.},
+  journal={IEEE Communications Surveys \& Tutorials}, 
+  title={A Survey on Blockchain Scalability: From Hardware to Layer-Two Protocols}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Blockchains;Surveys;Scalability;Protocols;Proposals;Privacy;Lightning;blockchain;payment channel networks;rollups},
+  doi={10.1109/COMST.2024.3376252}}
+
+@ARTICLE{9718520,
+  author={Yang, Jiawei and Dai, Jiahong and Gooi, Hoay Beng and Nguyen, Hung Dinh and Wang, Ping},
+  journal={IEEE Transactions on Smart Grid}, 
+  title={Hierarchical Blockchain Design for Distributed Control and Energy Trading Within Microgrids}, 
+  year={2022},
+  volume={13},
+  number={4},
+  pages={3133-3144},
+  keywords={Blockchains;Microgrids;Peer-to-peer computing;Decentralized control;Pricing;Smart contracts;Game theory;Distributed control;peer-to-peer energy trading;cyber-security;hierarchical blockchain;smart grid},
+  doi={10.1109/TSG.2022.3153693}}
+
+
+@article{SADAWI2021121124,
+title = {A comprehensive hierarchical blockchain system for carbon emission trading utilizing blockchain of things and smart contract},
+journal = {Technological Forecasting and Social Change},
+volume = {173},
+pages = {121124},
+year = {2021},
+issn = {0040-1625},
+doi = {https://doi.org/10.1016/j.techfore.2021.121124},
+url = {https://www.sciencedirect.com/science/article/pii/S0040162521005576},
+author = {Alia Al Sadawi and Batool Madani and Sara Saboor and Malick Ndiaye and Ghassan Abu-Lebdeh},
+keywords = {Blockchain, Carbon Trading, IoT, Blockchain of Things, Greenhouse gasses (GHG), Smart Contract},
+abstract = {Climate change is a major issue that has disastrous implications on the environment, which, if continued, will cause severe consequences. One of the leading causes of climate change is the emissions of harmful gases, particularly CO2. In 1997, the Kyoto protocol was signed by 192 countries, creating a system that monetizes CO2 emissions with an aim to control them. Most countries signed a carbon trading scheme, but the scheme fell short of its goals due to manipulation, lack of integrity, and multiple other challenges. This work presents an improved blockchain-based approach to achieve the objective of monitoring the reduction of carbon emissions. Blockchain's distinct features such as security, immutability, transparency, traceability, and trust, make it a robust and reliable solution for the carbon trading market. Previous Blockchain-based proposals were not comprehensive, practical, applicable, or efficient enough to form an effective solution. This research addresses the current gaps and proposes a comprehensive three-stage hierarchical blockchain framework that employs smart contracts in Blockchain of Things (BoT) to ensure integrity in the system and reach fair trade status that favors the environment over companies' cost reductions and profit-making. The result is an optimized carbon emission trading framework, fully transparent with automated trading and control mechanisms.}
+}
+
+@article{LUO2022118167,
+title = {A hierarchical blockchain architecture based V2G market trading system},
+journal = {Applied Energy},
+volume = {307},
+pages = {118167},
+year = {2022},
+issn = {0306-2619},
+doi = {https://doi.org/10.1016/j.apenergy.2021.118167},
+url = {https://www.sciencedirect.com/science/article/pii/S0306261921014392},
+author = {Qingsong Luo and Yimin Zhou and Weicheng Hou and Lei Peng},
+keywords = {Intelligent contract, Blockchain, Cellular automata, Trading system, Vehicle to Grid},
+abstract = {Along with the increasing prosperity of electric vehicles (EVs), the large-scale penetration of EVs in V2G (Vehicle to Grid) trading market brings difficulties and security issues in the operation of the energy market. The blockchain has the characteristics of security, transparency, decentralization and traceability, which provides an alternative for complex energy market operation in a secure environment. In this paper, a novel hierarchical blockchain architecture is constructed for the V2G trading system including Data Blockchain layer, Operation Blockchain layer and Transaction Blockchain layer. The intelligent contracts of the V2G trading, two-level auction and optimization strategies are designed for scheduling EVs orderly charge and discharge to participate in the grid load regulation so as to minimize the total load variance of the grid and realize reasonable benefit distribution among the involved market entities, i.e., EVs, aggregators and grid. Based on the V2G trading characteristics, a transaction manager with four optimization strategies are designed to further optimize the transaction generation process. The CA (cellular automata) based simulation experiments are performed to verify the effectiveness of the proposed V2G trading system.}
+}
+
+@article{chai2020hierarchical,
+  title={A hierarchical blockchain-enabled federated learning algorithm for knowledge sharing in internet of vehicles},
+  author={Chai, Haoye and Leng, Supeng and Chen, Yijin and Zhang, Ke},
+  journal={IEEE Transactions on Intelligent Transportation Systems},
+  volume={22},
+  number={7},
+  pages={3975--3986},
+  year={2020},
+  publisher={IEEE}
+}
+
+@article{sarhan2022hbfl,
+  title={HBFL: A hierarchical blockchain-based federated learning framework for collaborative IoT intrusion detection},
+  author={Sarhan, Mohanad and Lo, Wai Weng and Layeghy, Siamak and Portmann, Marius},
+  journal={Computers and Electrical Engineering},
+  volume={103},
+  pages={108379},
+  year={2022},
+  publisher={Elsevier}
+}
+
+@ARTICLE{10453360,
+  author={Tong, Ziheng and Wang, Jingjing and Hou, Xiangwang and Chen, Jianrui and Jiao, Zihan and Liu, Jianwei},
+  journal={IEEE Internet of Things Journal}, 
+  title={Blockchain-Based Trustworthy and Efficient Hierarchical Federated Learning for UAV-Enabled IoT Networks}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Autonomous aerial vehicles;Data models;Federated learning;Blockchains;Internet of Things;Computational modeling;Training;Hierarchical federated learning (HFL);UAV networks;blockchain;IoT;deep reinforcement learning},
+  doi={10.1109/JIOT.2024.3370964}}
+
+
+@INPROCEEDINGS{9900546,
+  author={Aloqaily, Moayad and Al Ridhawi, Ismaeel and Karray, Fakhri and Guizani, Mohsen},
+  booktitle={2022 International Balkan Conference on Communications and Networking (BalkanCom)}, 
+  title={Towards Blockchain-based Hierarchical Federated Learning for Cyber-Physical Systems}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={46-50},
+  keywords={Training;Performance evaluation;Federated learning;Clustering algorithms;Cyber-physical systems;Blockchains;Fourth Industrial Revolution;Blockchain;Cyber-physical systems;Federated Learning;Industry 4.0},
+  doi={10.1109/BalkanCom55633.2022.9900546}}
+
+@ARTICLE{10167763,
+  author={Huang, Xiaoge and Wu, Yuhang and Liang, Chengchao and Chen, Qianbin and Zhang, Jie},
+  journal={IEEE Internet of Things Journal}, 
+  title={Distance-Aware Hierarchical Federated Learning in Blockchain-Enabled Edge Computing Network}, 
+  year={2023},
+  volume={10},
+  number={21},
+  pages={19163-19176},
+  keywords={Data models;Computational modeling;Servers;Blockchains;Training;Internet of Things;Federated learning;Blockchain;data distance;hierarchical federated learning (HFL);learning latency},
+  doi={10.1109/JIOT.2023.3279983}}
+
+
+@ARTICLE{9920221,
+  author={Stephanie, Veronika and Khalil, Ibrahim and Atiquzzaman, Mohammed and Yi, Xun},
+  journal={IEEE Transactions on Industrial Informatics}, 
+  title={Trustworthy Privacy-Preserving Hierarchical Ensemble and Federated Learning in Healthcare 4.0 With Blockchain}, 
+  year={2023},
+  volume={19},
+  number={7},
+  pages={7936-7945},
+  keywords={Computational modeling;Data models;Blockchains;Hospitals;Servers;Data privacy;Privacy;Artificial intelligent (AI);blockchain;deep learning (DL);ensemble learning;federated learning (FL);privacy preservation;secure multiparty computation},
+  doi={10.1109/TII.2022.3214998}}
+
+
+@ARTICLE{9919199,
+  author={Wang, Xiaofei and Zhao, Yunfeng and Qiu, Chao and Liu, Zhicheng and Nie, Jiangtian and Leung, Victor C. M.},
+  journal={IEEE Journal on Selected Areas in Communications}, 
+  title={InFEDge: A Blockchain-Based Incentive Mechanism in Hierarchical Federated Learning for End-Edge-Cloud Communications}, 
+  year={2022},
+  volume={40},
+  number={12},
+  pages={3325-3342},
+  keywords={Game theory;Computational modeling;Servers;Federated learning;Computer architecture;Cloud computing;Blockchains;Federated learning;incentive mechanism;blockchain;edge intelligence;game theory},
+  doi={10.1109/JSAC.2022.3213323}}
+
+  @ARTICLE{9786753,
+  author={Xu, Ronghua and Chen, Yu},
+  journal={IEEE Transactions on Network and Service Management}, 
+  title={μDFL: A Secure Microchained Decentralized Federated Learning Fabric Atop IoT Networks}, 
+  year={2022},
+  volume={19},
+  number={3},
+  pages={2677-2688},
+  keywords={Training;Data models;Computational modeling;Data privacy;Consensus protocol;Privacy;Collaborative work;Internet of Things (IoT);federated learning;hierarchical blockchain;proof of credit;security;privacy},
+  doi={10.1109/TNSM.2022.3179892}}
+
+
+
+@ARTICLE{Wahoo,
+  author={Dai, Xiaohai and Zhang, Zhaonan and Guo, Zhengxuan and Ding, Chaozheng and Xiao, Jiang and Xie, Xia and Hao, Rui and Jin, Hai},
+  journal={IEEE Transactions on Information Forensics and Security}, 
+  title={Wahoo: A DAG-based BFT Consensus with Low Latency and Low Communication Overhead}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Consensus protocol;Safety;Throughput;Fault tolerant systems;Fault tolerance;Directed acyclic graph;Computer science;aaa},
+  doi={10.1109/TIFS.2024.3409082}}
+
+
+@article{SharDag,
+  title={SharDAG: Scaling DAG-based Blockchains via Adaptive Sharding},
+  author={Cheng, Feng and Xiao, Jiang and Liu, Cunyang and Zhang, Shijie and Zhou, Yifan and Li, Bo and Li, Baochun and Jin, Hai},
+  journal={2024 40th IEEE International Conference on Data Engineering (ICDE)}, 
+  year={2024},
+  address = {Utrecht, Netherlands},
+
+}
+
+@article{10.1145/3503042,
+author = {Wang, Xin and Duan, Sisi and Clavin, James and Zhang, Haibin},
+title = {BFT in Blockchains: From Protocols to Use Cases},
+year = {2022},
+issue_date = {January 2022},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+volume = {54},
+number = {10s},
+issn = {0360-0300},
+url = {https://doi.org/10.1145/3503042},
+doi = {10.1145/3503042},
+abstract = {A blockchain is a distributed system that achieves strong security guarantees in storing, managing, and processing data. All blockchains achieve a common goal: building a decentralized system that provides a trustworthy service in an untrustworthy environment. A blockchain builds a Byzantine fault-tolerant (BFT) system in which decentralized nodes run a protocol to reach an agreement on the common system state. In this article, we focus on the research of BFT protocols. In particular, we categorize BFT protocols according to both the system models and workflow. We seek to answer these important questions: How has the research in BFT evolved in the past four decades, especially with the rise of blockchains? What are the driven needs for BFT research in the future?},
+journal = {ACM Comput. Surv.},
+month = {sep},
+articleno = {209},
+numpages = {37},
+keywords = {Blockchains, consensus, Byzantine fault tolerance, survey}
+}
+
+@INPROCEEDINGS{FastFabric,
+  author={Gorenflo, Christian and Lee, Stephen and Golab, Lukasz and Keshav, Srinivasan},
+  booktitle={2019 IEEE International Conference on Blockchain and Cryptocurrency (ICBC)}, 
+  title={FastFabric: Scaling Hyperledger Fabric to 20,000 Transactions per Second}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={455-463},
+  keywords={Fabrics;Blockchain;Peer-to-peer computing;Distributed ledger;Throughput;Proposals;Payloads},
+  doi={10.1109/BLOC.2019.8751452}}
