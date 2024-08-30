@@ -3125,23 +3125,6 @@ abstract="With the advance in technology and growth in standard of living, smart
 isbn="978-3-030-22482-0"
 }
 
-@inproceedings{narwhaltusk,
-author = {Danezis, George and Kokoris-Kogias, Lefteris and Sonnino, Alberto and Spiegelman, Alexander},
-title = {Narwhal and Tusk: A DAG-Based Mempool and Efficient BFT Consensus},
-year = {2022},
-isbn = {9781450391627},
-publisher = {Association for Computing Machinery},
-address = {New York, NY, USA},
-url = {https://doi.org/10.1145/3492321.3519594},
-doi = {10.1145/3492321.3519594},
-abstract = {We propose separating the task of reliable transaction dissemination from transaction ordering, to enable high-performance Byzantine fault-tolerant quorum-based consensus. We design and evaluate a mempool protocol, Narwhal, specializing in high-throughput reliable dissemination and storage of causal histories of transactions. Narwhal tolerates an asynchronous network and maintains high performance despite failures. Narwhal is designed to easily scale-out using multiple workers at each validator, and we demonstrate that there is no foreseeable limit to the throughput we can achieve.Composing Narwhal with a partially synchronous consensus protocol (Narwhal-HotStuff) yields significantly better throughput even in the presence of faults or intermittent loss of liveness due to asynchrony. However, loss of liveness can result in higher latency. To achieve overall good performance when faults occur we design Tusk, a zero-message overhead asynchronous consensus protocol, to work with Narwhal. We demonstrate its high performance under a variety of configurations and faults.As a summary of results, on a WAN, Narwhal-Hotstuff achieves over 130,000 tx/sec at less than 2-sec latency compared with 1,800 tx/sec at 1-sec latency for Hotstuff. Additional workers increase throughput linearly to 600,000 tx/sec without any latency increase. Tusk achieves 160,000 tx/sec with about 3 seconds latency. Under faults, both protocols maintain high throughput, but Narwhal-HotStuff suffers from increased latency.},
-booktitle = {Proceedings of the Seventeenth European Conference on Computer Systems},
-pages = {34–50},
-numpages = {17},
-keywords = {Byzantine fault tolerant, consensus protocol},
-location = {Rennes, France},
-series = {EuroSys '22}
-}
 
 @inproceedings{bullshark,
 author = {Spiegelman, Alexander and Giridharan, Neil and Sonnino, Alberto and Kokoris-Kogias, Lefteris},
@@ -4337,3 +4320,22 @@ keywords = {Blockchains, consensus, Byzantine fault tolerance, survey}
   pages={455-463},
   keywords={Fabrics;Blockchain;Peer-to-peer computing;Distributed ledger;Throughput;Proposals;Payloads},
   doi={10.1109/BLOC.2019.8751452}}
+
+@inproceedings{narwhaltusk,
+  author    = {Danezis, George and Kokoris-Kogias, Lefteris and Sonnino, Alberto and Spiegelman, Alexander},
+  title     = {Narwhal and Tusk: A DAG-Based Mempool and Efficient BFT Consensus},
+  year      = {2022},
+  isbn      = {9781450391627},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3492321.3519594},
+  doi       = {10.1145/3492321.3519594},
+  abstract  = {We propose separating the task of reliable transaction dissemination from transaction ordering, to enable high-performance Byzantine fault-tolerant quorum-based consensus. We design and evaluate a mempool protocol, Narwhal, specializing in high-throughput reliable dissemination and storage of causal histories of transactions. Narwhal tolerates an asynchronous network and maintains high performance despite failures. Narwhal is designed to easily scale-out using multiple workers at each validator, and we demonstrate that there is no foreseeable limit to the throughput we can achieve.Composing Narwhal with a partially synchronous consensus protocol (Narwhal-HotStuff) yields significantly better throughput even in the presence of faults or intermittent loss of liveness due to asynchrony. However, loss of liveness can result in higher latency. To achieve overall good performance when faults occur we design Tusk, a zero-message overhead asynchronous consensus protocol, to work with Narwhal. We demonstrate its high performance under a variety of configurations and faults.As a summary of results, on a WAN, Narwhal-Hotstuff achieves over 130,000 tx/sec at less than 2-sec latency compared with 1,800 tx/sec at 1-sec latency for Hotstuff. Additional workers increase throughput linearly to 600,000 tx/sec without any latency increase. Tusk achieves 160,000 tx/sec with about 3 seconds latency. Under faults, both protocols maintain high throughput, but Narwhal-HotStuff suffers from increased latency.},
+  booktitle = {Proceedings of the Seventeenth European Conference on Computer Systems},
+  pages     = {34–50},
+  numpages  = {17},
+  keywords  = {Byzantine fault tolerant, consensus protocol},
+  location  = {Rennes, France},
+  series    = {EuroSys '22}
+}
+
