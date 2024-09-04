@@ -4339,3 +4339,18 @@ keywords = {Blockchains, consensus, Byzantine fault tolerance, survey}
   series    = {EuroSys '22}
 }
 
+
+@article{dylochain,
+  author    = {Jo, Yongrae and Park, Chanik},
+  title     = {A Hierarchical Blockchain supporting Dynamic Locality by Extending Execute-Order-Validate Architecture},
+  year      = {2024},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3688811},
+  doi       = {10.1145/3688811},
+  abstract  = {Blockchain scalability is an active area of research. One of the promising approaches is the execute-order-validate (X-O-V) blockchain architecture, which leverages high concurrency. Meanwhile, many transactions exhibit dynamic locality—a workload characteristic with a high degree of locality that changes over time (e.g., due to the mobility of devices). In this paper, we propose DyloChain, a hierarchical blockchain supporting dynamic locality by extending the X-O-V architecture across sharding zones. In DyloChain's hierarchy, higher-level servers (called M-nodes) are responsible for cross-zone communication with a main chain to ensure global consistency and availability, while lower-level servers (called L-nodes) validate local blocks with a local chain. To support dynamic locality, DyloChain suggests an order-execute-order-validate (O-X-O-V) transaction processing model that extends the X-O-V model to accommodate the hierarchical structure. Specifically, the O-X-O-V model optimizes efficiency through speculative local updates on each local chain (O-X) for the early removal of potential conflicts within a zone and enables high parallelism across zones. Subsequently, the model aggregates these local blocks onto the main chain (O-V), ensuring a globally consistent total order across zones. This is facilitated by an extended validation procedure that detects interferences between concurrently dependent transactions across zones. DyloChain resolves interferences using a state synchronization protocol that synchronizes the corresponding main states of the interfered local states into the involved local chains. DyloChain improves locality by employing a state reshard protocol that transfers a user's state ownership between source and destination local chains by atomically committing user-issued reshard requests to the involved chains. We implement and conduct comprehensive performance evaluations of DyloChain under various configurations.},
+  note      = {Just Accepted},
+  journal   = {Distrib. Ledger Technol.},
+  month     = {aug},
+  keywords  = {Blockchain, Hierarchy, Sharding, Execute-Order-Validate, Dynamic Locality}
+}
