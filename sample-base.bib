@@ -1806,6 +1806,7 @@ series = {EuroSys '18}
   pages      = {1597–1609},
   numpages   = {13}
 }
+
 @inproceedings{AHL,
   author    = {Hung Dang and
                Tien Tuan Anh Dinh and
@@ -4369,4 +4370,85 @@ keywords = {Blockchains, consensus, Byzantine fault tolerance, survey}
   journal   = {Distrib. Ledger Technol.},
   month     = {aug},
   keywords  = {Blockchain, Hierarchy, Sharding, Execute-Order-Validate, Dynamic Locality}
+}
+
+@inproceedings{BlockSTM,
+  author    = {Gelashvili, Rati and Spiegelman, Alexander and Xiang, Zhuolun and Danezis, George and Li, Zekun and Malkhi, Dahlia and Xia, Yu and Zhou, Runtian},
+  title     = {Block-STM: Scaling Blockchain Execution by Turning Ordering Curse to a Performance Blessing},
+  year      = {2023},
+  isbn      = {9798400700156},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3572848.3577524},
+  doi       = {10.1145/3572848.3577524},
+  abstract  = {Block-STM is a parallel execution engine for smart contracts, built around the principles of Software Transactional Memory. Transactions are grouped in blocks, and every execution of the block must yield the same deterministic outcome. Block-STM further enforces that the outcome is consistent with executing transactions according to a preset order, leveraging this order to dynamically detect dependencies and avoid conflicts during speculative transaction execution. At the core of Block-STM is a novel, low-overhead collaborative scheduler of execution and validation tasks.Block-STM is implemented on the main branch of the Diem Blockchain code-base and runs in production at Aptos. Our evaluation demonstrates that Block-STM is adaptive to workloads with different conflict rates and utilizes the inherent parallelism therein. Block-STM achieves up to 110k tps in the Diem benchmarks and up to 170k tps in the Aptos Benchmarks, which is a 20x and 17x improvement over the sequential baseline with 32 threads, respectively. The throughput on a contended workload is up to 50k tps and 80k tps in Diem and Aptos benchmarks, respectively.},
+  booktitle = {Proceedings of the 28th ACM SIGPLAN Annual Symposium on Principles and Practice of Parallel Programming},
+  pages     = {232–244},
+  numpages  = {13},
+  keywords  = {STM, blockchain, parallel execution},
+  location  = {Montreal, QC, Canada},
+  series    = {PPoPP '23}
+}
+
+@inproceedings{PEEP,
+  author    = {Chen, Zhihao and Qi, Xiaodong and Du, Xiaofan and Zhang, Zhao and Jin, Cheqing},
+  title     = {PEEP: A Parallel Execution Engine for Permissioned Blockchain Systems},
+  year      = {2021},
+  isbn      = {978-3-030-73199-1},
+  publisher = {Springer-Verlag},
+  address   = {Berlin, Heidelberg},
+  url       = {https://doi.org/10.1007/978-3-030-73200-4_24},
+  doi       = {10.1007/978-3-030-73200-4_24},
+  abstract  = {Unlike blockchain systems in public settings, the stricter trust model in permissioned blockchain opens an opportunity for pursuing higher throughput. Recently, as the consensus protocols are developed significantly, the existing serial execution manner of transactions becomes a key factor in limiting overall performance. However, it is not easy to extend the concurrency control protocols, widely used in database systems, to blockchain systems. In particular, there are two challenges to achieve parallel execution of transactions in blockchain as follows: (i) the final results of different replicas may diverge since most protocols just promise the effect of transactions equivalent to some serial order but this order may vary for every concurrent execution; and (ii) almost all state trees that are used to manage states of blockchain do not support fast concurrent updates. In the view of above challenges, we propose a parallel execution engine called PEEP, towards permissioned blockchain systems. Specifically, PEEP employs a deterministic concurrency mechanism to obtain a predetermined serial order for parallel execution, and offers parallel update operations on state tree, which can be implemented on any radix tree with Merkle property. Finally, the extensive experiments show that PEEP outperforms existing serial execution greatly.},
+  booktitle = {Database Systems for Advanced Applications: 26th International Conference, DASFAA 2021, Taipei, Taiwan, April 11–14, 2021, Proceedings, Part III},
+  pages     = {341–357},
+  numpages  = {17},
+  keywords  = {Blockchain, Permissioned, Execution optimization},
+  location  = {Taipei, Taiwan}
+}
+
+@article{PaVM,
+  author   = {Fang, Yaozheng and Zhou, Zhiyuan and Dai, Surong and Yang, Jinni and Zhang, Hui and Lu, Ye},
+  journal  = {IEEE Transactions on Parallel and Distributed Systems},
+  title    = {PaVM: A Parallel Virtual Machine for Smart Contract Execution and Validation},
+  year     = {2024},
+  volume   = {35},
+  number   = {1},
+  pages    = {186-202},
+  keywords = {Smart contracts;Blockchains;Runtime;Virtual machining;Peer-to-peer computing;Instruction sets;Synchronization;Architectural design;blockchain;smart contract;virtual machine},
+  doi      = {10.1109/TPDS.2023.3334208}
+}
+
+@inproceedings{DMVCC,
+  author    = {X. Qi and J. Jiao and Y. Li},
+  booktitle = {2023 IEEE 43rd International Conference on Distributed Computing Systems (ICDCS)},
+  title     = {Smart Contract Parallel Execution with Fine-Grained State Accesses},
+  year      = {2023},
+  volume    = {},
+  issn      = {},
+  pages     = {841-852},
+  abstract  = {As various optimizations being proposed recently, the performance of blockchains is no longer limited by the consensus protocols, successfully scaling to thousands of transactions per second. To further improve blockchains&#x27; throughput, exploiting the parallelism in smart contract executions becomes a clear solution to resolve the new performance bottleneck. The existing techniques perform concurrency control on smart contract transactions based on pre-determined read/write sets, which can hardly be calculated precisely. As a result, many parallelization opportunities are missed in order to maintain the correctness of transaction executions. In this paper, we propose a novel execution scheduling framework, DMVCC, to further increase the parallelism in smart contract executions, via more fine-grained control on state accesses. DMVCC improves over existing techniques with two key features: (1) write versioning, eliminating the write-write conflicts between transactions, and (2) early-write visibility, enabling other transactions to read the writes from a transaction earlier, before it being committed. We integrated DMVCC into the Ethereum Virtual Machine, to evaluate its performance in real-world blockchain environments. The experimental results show that DMVCC doubles the parallel speedup achievable to a 20 x overall speedup, compared with the serial execution baseline, approaching the theoretical optimum.},
+  keywords  = {smart contracts;parallel processing;throughput;virtual machining;concurrency control;consensus protocol;distributed computing},
+  doi       = {10.1109/ICDCS57875.2023.00068},
+  url       = {https://doi.ieeecomputersociety.org/10.1109/ICDCS57875.2023.00068},
+  publisher = {IEEE Computer Society},
+  address   = {Los Alamitos, CA, USA},
+  month     = {jul}
+}
+
+@inproceedings{HieraChain,
+  author    = {Tang, Haibo and Zhang, Huan and Zhang, Zhenyu and Zhang, Zhao and Jin, Cheqing and Zhou, Aoying},
+  title     = {Towards High-performance Transactions via Hierarchical Blockchain Sharding},
+  year      = {2024},
+  isbn      = {978-3-031-69576-6},
+  publisher = {Springer-Verlag},
+  address   = {Berlin, Heidelberg},
+  url       = {https://doi.org/10.1007/978-3-031-69577-3_26},
+  doi       = {10.1007/978-3-031-69577-3_26},
+  abstract  = {Blockchain sharding, a promising approach to improve system performance, divides the network into several small parallel working shards. However, the performance of existing sharded blockchain systems may degrade seriously due to the existence of cross-shard transactions. To overcome such drawbacks, we propose a blockchain system called HieraChain to process transactions with robust cross-shard transactions tolerance, based on a novel hierarchical sharding architecture. The upper-layer shards order the cross-shard transactions and the participants process them asynchronously to pipeline the transactions ordering. Furthermore, HieraChain proposes an optimized locality-aware protocol to trade off the local access patterns and the induced remote access events. Extensive experimental results demonstrate that HieraChain outperforms the state-of-the-art approaches significantly in the presence of cross-shard transactions, achieving up to 3\texttimes{} and 2\texttimes{} higher throughput than Saguaro and SharPer under general workload respectively. Moreover, our locality-aware approach further reduces transaction latency by 68 \% and 51\% compared to our basic approach and traditional baselines, respectively.},
+  booktitle = {Euro-Par 2024: Parallel Processing: 30th European Conference on Parallel and Distributed Processing, Madrid, Spain, August 26–30, 2024, Proceedings, Part I},
+  pages     = {373–388},
+  numpages  = {16},
+  keywords  = {cross-shard transaction, hierarchical sharding, locality-awareness, blockchains},
+  location  = {Madrid, Spain}
 }
