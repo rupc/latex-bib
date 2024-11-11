@@ -4462,3 +4462,74 @@ keywords = {Blockchains, consensus, Byzantine fault tolerance, survey}
   primaryclass  = {cs.DC},
   url           = {https://arxiv.org/abs/2209.05633}
 }
+
+@article{10539974,
+  author   = {Li, Meiqi and Luo, Xinyi and Xue, Kaiping and Xue, Yingjie and Sun, Wentuo and Li, Jian},
+  journal  = {IEEE Transactions on Information Forensics and Security},
+  title    = {A Secure and Efficient Blockchain Sharding Scheme via Hybrid Consensus and Dynamic Management},
+  year     = {2024},
+  volume   = {19},
+  number   = {},
+  pages    = {5911-5924},
+  keywords = {Sharding;Blockchains;Security;Scalability;Safety;Threat modeling;System performance;Blockchain;sharding;distributed consensus},
+  doi      = {10.1109/TIFS.2024.3406145}
+}
+
+@misc{Trail,
+  title         = {TRAIL: Cross-Shard Validation for Cryptocurrency Byzantine Shard Protection},
+  author        = {Mitch Jacovetty and Joseph Oglio and Mikhail Nesterenko and Gokarna Sharma},
+  year          = {2024},
+  eprint        = {2405.07146},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.DC},
+  url           = {https://arxiv.org/abs/2405.07146}
+}
+
+@inproceedings{GearBox,
+  author    = {David, Bernardo and Magri, Bernardo and Matt, Christian and Nielsen, Jesper Buus and Tschudi, Daniel},
+  title     = {GearBox: Optimal-size Shard Committees by Leveraging the Safety-Liveness Dichotomy},
+  year      = {2022},
+  isbn      = {9781450394505},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3548606.3559375},
+  doi       = {10.1145/3548606.3559375},
+  abstract  = {Sharding is an emerging technique to overcome scalability issues on blockchain based public ledgers. Without sharding, every node in the network has to listen to and process all ledger protocol messages. The basic idea of sharding is to parallelize the ledger protocol: the nodes are divided into smaller subsets that each take care of a fraction of the original load by executing lighter instances of the ledger protocol, also called shards. The smaller the shards, the higher the efficiency, as by increasing parallelism there is less overhead in the shard consensus.In this vein, we propose a novel approach that leverages the sharding safety-liveness dichotomy. We separate the liveness and safety in shard consensus, allowing us to dynamically tune shard parameters to achieve essentially optimal efficiency for the current corruption ratio of the system. We start by sampling a relatively small shard (possibly with a small honesty ratio), and we carefully trade-off safety for liveness in the consensus mechanism to tolerate small honesty without losing safety. However, for a shard to be live, a higher honesty ratio is required in the worst case. To detect liveness failures, we use a so-called control chain that is always live and safe. Shards that are detected to be not live are resampled with increased shard size and liveness tolerance until they are live, ensuring that all shards are always safe and run with optimal efficiency. As a concrete example, considering a population of 10K parties with at most 30\% corruption and 60-bit security, previous designs required over 5800 parties in each shard to guarantee security. Our design requires only 1713 parties in the worst case with maximal corruption, and in the optimistic case works with only~35 parties without compromising security.Moreover, in this highly concurrent execution setting, it is paramount to guarantee that both the sharded ledger protocol and its sub protocols (i.e., the shards) are secure under composition. To prove the security of our approach, we present ideal functionalities capturing a sharded ledger as well as ideal functionalities capturing the control chain and individual shard consensus, which needs adjustable liveness. We further formalize our protocols and prove that they securely realize the sharded ledger functionality in the UC framework.},
+  booktitle = {Proceedings of the 2022 ACM SIGSAC Conference on Computer and Communications Security},
+  pages     = {683–696},
+  numpages  = {14},
+  keywords  = {sharding, blockchain},
+  location  = {Los Angeles, CA, USA},
+  series    = {CCS '22}
+}
+
+@inproceedings{Reticulum,
+  author    = {Yibin Xu and
+               Jingyi Zheng and
+               Boris D{\"{u}}dder and
+               Tijs Slaats and
+               Yongluan Zhou},
+  title     = {A Two-Layer Blockchain Sharding Protocol Leveraging Safety and Liveness
+               for Enhanced Performance},
+  booktitle = {31st Annual Network and Distributed System Security Symposium, {NDSS}
+               2024, San Diego, California, USA, February 26 - March 1, 2024},
+  publisher = {The Internet Society},
+  year      = {2024},
+  url       = {https://www.ndss-symposium.org/ndss-paper/a-two-layer-blockchain-sharding-protocol-leveraging-safety-and-liveness-for-enhanced-performance/},
+  timestamp = {Tue, 24 Sep 2024 17:19:50 +0200},
+  biburl    = {https://dblp.org/rec/conf/ndss/XuZDSZ24.bib},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+
+@inproceedings{Jenga,
+  author    = {Li, Mingzhe and Lin, You and Zhang, Jin and Wang, Wei},
+  booktitle = {2022 IEEE 42nd International Conference on Distributed Computing Systems (ICDCS)},
+  title     = {Jenga: Orchestrating Smart Contracts in Sharding-Based Blockchain for Efficient Processing},
+  year      = {2022},
+  volume    = {},
+  number    = {},
+  pages     = {133-143},
+  keywords  = {Scalability;Smart contracts;Performance gain;Throughput;Consensus protocol;Distributed computing},
+  doi       = {10.1109/ICDCS54860.2022.00022}
+}
