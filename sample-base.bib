@@ -4545,3 +4545,20 @@ keywords = {Blockchains, consensus, Byzantine fault tolerance, survey}
   keywords = {Blockchains;Smart contracts;Servers;Throughput;Topology;Merging;Electronic commerce;Blockchain;sharding;smart contract},
   doi      = {10.1109/JSAC.2022.3213326}
 }
+
+@inproceedings{OptMe,
+  author    = { Ryu, Donghyeon and Park, Chanik },
+  booktitle = { 2024 SC24: International Conference for High Performance Computing, Networking, Storage and Analysis SC },
+  title     = {{ Toward High-Performance Blockchain System by Blurring the Line between Ordering and Execution }},
+  year      = {2024},
+  volume    = {},
+  issn      = {},
+  pages     = {391-406},
+  abstract  = { The primary bottleneck of blockchain is shifting from consensus to execution due to recent advances in DAGbased consensus algorithms supporting over 100k TPS. Many blockchain systems segregate execution from ordering, missing the opportunity to harness potential parallelism in consensusproduced batches. In this paper, we propose a new deterministically orderable concurrency control algorithm, OptME, which improves the performance of execution phase by exploiting inherent parallelism among transactions. This algorithm analyzes transaction dependencies to extract parallelism, and determines the total order of transaction execution. OptME consists of three steps: (1) building a transaction dependency graph, (2) generating a parallel execution schedule, and (3) executing transactions based on the schedule. We employ several optimizations, including parallel dependency graph construction, early abort detection, and efficient reordering with an optimistic assumption. Our evaluation demonstrates that OptME achieves up to 350k TPS and outperforms a state-of-the-art concurrency control algorithm, even under high contention scenarios. },
+  keywords  = {Distributed databases;Blockchains;Smart contracts;Concurrency control;Scheduling algorithms},
+  doi       = {10.1109/SC41406.2024.00033},
+  url       = {https://doi.ieeecomputersociety.org/10.1109/SC41406.2024.00033},
+  publisher = {IEEE Computer Society},
+  address   = {Los Alamitos, CA, USA},
+  month     = Nov
+}
