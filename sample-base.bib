@@ -4113,3 +4113,63 @@
   keywords = {Blockchains;Sharding;Scalability;Security;Synchronization;Resource management;Merging;Internet of Things;Throughput;Monitoring;Blockchain sharding;cross-shard transactions;secure consensus;state synchronization;scalability},
   doi      = {10.1109/JIOT.2024.3490036}
 }
+
+
+@misc{Pilotfish,
+  title         = {Pilotfish: Distributed Execution for Scalable Blockchains},
+  author        = {Quentin Kniep and Lefteris Kokoris-Kogias and Alberto Sonnino and Igor Zablotchi and Nuda Zhang},
+  year          = {2025},
+  eprint        = {2401.16292},
+  archiveprefix = {arXiv},
+  primaryclass  = {cs.DC},
+  url           = {https://arxiv.org/abs/2401.16292}
+}
+
+@inproceedings{SuiLutris,
+  author    = {Blackshear, Sam and Chursin, Andrey and Danezis, George and Kichidis, Anastasios and Kokoris-Kogias, Lefteris and Li, Xun and Logan, Mark and Menon, Ashok and Nowacki, Todd and Sonnino, Alberto and Williams, Brandon and Zhang, Lu},
+  title     = {Sui Lutris: A Blockchain Combining Broadcast and Consensus},
+  year      = {2024},
+  isbn      = {9798400706363},
+  publisher = {Association for Computing Machinery},
+  address   = {New York, NY, USA},
+  url       = {https://doi.org/10.1145/3658644.3670286},
+  doi       = {10.1145/3658644.3670286},
+  abstract  = {Sui Lutris is the first smart-contract platform to sustainably achieve sub-second finality. It achieves this significant decrease by employing consensusless agreement not only for simple payments but for a large variety of transactions. Unlike prior work, Sui Lutris neither compromises expressiveness nor throughput and can run perpetually without restarts. Sui Lutris achieves this by safely integrating consensuless agreement with a high-throughput consensus protocol that is invoked out of the critical finality path but ensures that when a transaction is at risk of inconsistent concurrent accesses, its settlement is delayed until the total ordering is resolved. Building such a hybrid architecture is especially delicate during reconfiguration events, where the system needs to preserve the safety of the consensusless path without compromising the long-term liveness of potentially misconfigured clients. We thus develop a novel reconfiguration protocol, the first to provably show the safe and efficient reconfiguration of a consensusless blockchain. Sui Lutris is currently running in production and underpins the Sui smart-contract platform. Combined with the use of Objects instead of accounts it enables the safe execution of smart contracts that expose objects as a first-class resource. In our experiments Sui Lutris achieves latency lower than 0.5 seconds for throughput up to 5,000 certificates per second (150k ops/s with transaction blocks), compared to the state-of-the-art real-world consensus latencies of 3 seconds. Furthermore, it gracefully handles validators crash-recovery and does not suffer visible performance degradation during reconfiguration.},
+  booktitle = {Proceedings of the 2024 on ACM SIGSAC Conference on Computer and Communications Security},
+  pages     = {2606–2620},
+  numpages  = {15},
+  keywords  = {BFT consensus, consensusless transactions, deployed blockchain},
+  location  = {Salt Lake City, UT, USA},
+  series    = {CCS '24}
+}
+
+@inproceedings{HammerHead,
+  author    = {Tsimos, Giorgos and Kichidis, Anastasios and Sonnino, Alberto and Kokoris-Kogias, Lefteris},
+  booktitle = {2024 IEEE 44th International Conference on Distributed Computing Systems (ICDCS)},
+  title     = {HammerHead: Leader Reputation for Dynamic Scheduling},
+  year      = {2024},
+  volume    = {},
+  number    = {},
+  pages     = {1377-1387},
+  keywords  = {Measurement;Schedules;Throughput;Dynamic scheduling;Computer crashes;Robustness;Consensus protocol;Blockchains;Consensus;Byzantine Atomic Broadcast;Leader Utilization},
+  doi       = {10.1109/ICDCS60910.2024.00129}
+}
+
+@inproceedings{Twins_OPODIS,
+  author    = {Bano, Shehar and Sonnino, Alberto and Chursin, Andrey and Perelman, Dmitri and Li, Zekun and Ching, Avery and Malkhi, Dahlia},
+  title     = {{Twins: BFT Systems Made Robust}},
+  booktitle = {25th International Conference on Principles of Distributed Systems (OPODIS 2021)},
+  pages     = {7:1--7:29},
+  series    = {Leibniz International Proceedings in Informatics (LIPIcs)},
+  isbn      = {978-3-95977-219-8},
+  issn      = {1868-8969},
+  year      = {2022},
+  volume    = {217},
+  editor    = {Bramas, Quentin and Gramoli, Vincent and Milani, Alessia},
+  publisher = {Schloss Dagstuhl -- Leibniz-Zentrum f{\"u}r Informatik},
+  address   = {Dagstuhl, Germany},
+  url       = {https://drops.dagstuhl.de/entities/document/10.4230/LIPIcs.OPODIS.2021.7},
+  urn       = {urn:nbn:de:0030-drops-157825},
+  doi       = {10.4230/LIPIcs.OPODIS.2021.7},
+  annote    = {Keywords: Distributed Systems, Byzantine Fault Tolerance, Real-World Deployment}
+}
